@@ -152,3 +152,27 @@ footer {
     color: #fff;
     line-height: 1.6;
 }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust max-width as needed */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Keeps correct video ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
